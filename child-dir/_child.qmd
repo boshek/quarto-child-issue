@@ -1,0 +1,4 @@
+```{r}
+gt::gt(head(iris))
+head(iris)
+```

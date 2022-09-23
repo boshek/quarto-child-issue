@@ -1,0 +1,19 @@
+---
+title: "Untitled"
+format: html
+---
+
+# single
+```{r}
+## can render on 1.1.251
+## can't render on 1.2.150
+
+#| results: asis
+res <- knitr::knit_child(
+  input = "child-dir/_child.qmd",
+  envir = environment(),
+  quiet = TRUE
+)
+
+cat(res, sep = "\n")
+```
